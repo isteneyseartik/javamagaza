@@ -64,7 +64,7 @@ public class magaza {
 		}
 		else
 		{
-			System.err.println("ürün bulunamadý");
+			System.err.println("urun bulunamadi");
 		}
 	}
 	public void silUrun(String urunAdi) {
@@ -81,7 +81,7 @@ public class magaza {
 		}
 		else
 		{
-			System.err.println("ürün bulunamadý");
+			System.err.println("urun bulunamadi");
 		}
 	}
 }
@@ -90,13 +90,13 @@ class urun extends magaza{
 		super(urunler, adetFiyat);
 	}
 	
-	public void satýs(String urunAdi) {
+	public void satis(String urunAdi) {
 		if(super.urunAdiVarmi(urunAdi)) {
 			super.toplamPara+=super.getAdetFiyat();
 			super.silUrun(urunAdi);
 		}
 	}
-	public void satýs(int ID) {
+	public void satis(int ID) {
 		if(super.urunIDVarmi(ID)) {
 			super.toplamPara+=super.getAdetFiyat();
 			super.silUrun(ID);
